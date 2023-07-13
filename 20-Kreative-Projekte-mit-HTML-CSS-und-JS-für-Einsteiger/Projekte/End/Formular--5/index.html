@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formular</title>
+  </head>
+  <body>
+    <div class="ctn">
+      <h1>Unvergesslicher Sommergenuss</h1>
+      <form action="#">
+        <div class="input-ctn">
+          <div>
+            <label for="user-name">Benutzername</label>
+            <input
+              type="text"
+              placeholder="Thomas Schmidt"
+              id="user-name"
+              autocomplete="off"
+            />
+          </div>
+
+          <div>
+            <label for="user-name">Email Adresse</label>
+            <input
+              type="email"
+              placeholder="Beispiel@gmail.com"
+              id="email-address"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <div class="options-ctn">
+          <div>
+            <label for="options">Anzahl der Teilnhemer</label>
+            <select id="options">
+              <option value="Eine Person">Eine Person</option>
+              <option value="Eine Familie">Eine Familie</option>
+            </select>
+          </div>
+          <button>Buchen</button>
+        </div>
+      </form>
+
+      <div
+        class="summer-img"
+        role="img"
+        aria-label="Strand auf den Maladiven"
+      ></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: #d1e231;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 360px;
+  height: 470px;
+  background-color: #e9e9e9;
+  border-radius: 11px;
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.country-flag {
+  background-image: url(https://flagcdn.com/w320/de.png);
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 170px;
+}
+
+ul {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+ul li span:first-child {
+  display: inline-block;
+  text-transform: uppercase;
+  background: linear-gradient(to right top, #03c03c, #009e60);
+  width: 140px;
+  border-radius: 3px;
+  padding: 6px 0 4px 6px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+ul li span:first-child:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.08);
+}
+
+.search {
+  border: none;
+  position: absolute;
+  top: 85%;
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.search:hover {
+  border-radius: 8px;
+  width: 250px;
+}
+
+.search::placeholder {
+  color: white;
+}
+
+.search:hover::placeholder {
+  color: #111;
+}
+
+.blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.show-animation {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.loading-spinner {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

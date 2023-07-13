@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ctn {
+  perspective: 2000px;
+  width: 400px;
+  height: 550px;
+}
+
+.ctn:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  transition: transform 1500ms;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 11px;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-image: url(ninja-groß.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.back {
+  background-color: black;
+  padding: 12px;
+  transform: rotateY(180deg);
+}
+
+.circle-img {
+  display: inline-block;
+  background-image: url(ninja-klein.png);
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  border: 5px solid #eee;
+}
+
+.circle-img-ctn {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #eee;
+  margin-top: 12px;
+}
+
+h2 {
+  color: #eee;
+}
+
+.line-ctn {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 25px;
+}
+
+.line-ctn span {
+  display: inline-block;
+  width: 100%;
+  height: 15px;
+  background-color: #eee;
+  border-radius: 2px;
+  position: relative;
+}
+
+.line-ctn span div {
+  position: absolute;
+  height: 100%;
+  background-color: red;
+}
+
+.fill-el--1 {
+  width: 85%;
+}
+
+.fill-el--2 {
+  width: 70%;
+}
+
+.fill-el--3 {
+  width: 65%;
+}
+
+.fill-el--4 {
+  width: 55%;
+}
+
+.fill-el--5 {
+  width: 50%;
+}

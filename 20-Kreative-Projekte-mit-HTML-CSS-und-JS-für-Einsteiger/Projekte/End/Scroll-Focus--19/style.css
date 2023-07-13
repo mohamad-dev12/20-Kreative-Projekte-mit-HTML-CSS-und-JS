@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 400vh;
+  background-image: url(mountain.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  backdrop-filter: blur(20px);
+}

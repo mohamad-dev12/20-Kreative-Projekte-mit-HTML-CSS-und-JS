@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Bilder/bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.loch {
+  width: 95px;
+}
+
+.loch-ctn {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.loch-ctn--1 {
+  top: 45%;
+  left: 50%;
+}
+
+.loch-ctn--2 {
+  top: 23%;
+  left: 3%;
+}
+
+.loch-ctn--3 {
+  top: 35%;
+  left: 29%;
+}
+
+.loch-ctn--4 {
+  top: 23%;
+  right: 3%;
+}
+
+.loch-ctn--5 {
+  top: 35%;
+  right: 29%;
+}
+
+.loch-ctn--6 {
+  bottom: 15%;
+  left: 15%;
+}
+
+.loch-ctn--7 {
+  bottom: 17%;
+  left: 38%;
+}
+
+.loch-ctn--8 {
+  bottom: 17%;
+  right: 28%;
+}
+
+.loch-ctn--9 {
+  bottom: 17%;
+  right: 5%;
+}
+
+.second-ctn {
+  position: relative;
+  overflow: hidden;
+  width: 95px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.Maulwurf {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 60%);
+  width: 70px;
+  transition: transform 0.3s;
+}
+
+.Hammer {
+  width: 140px;
+  position: absolute;
+  top: -60%;
+  left: 30%;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  width: 200px;
+  height: 200px;
+  background-color: #999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.popup-img {
+  width: 70px;
+  height: 70px;
+}
+
+.btn {
+  border: none;
+  font-size: 20px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.btn:hover {
+  background-color: rgb(48, 165, 48);
+}
+
+.hide-popup {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(-110deg);
+}
+
+.visible {
+  opacity: 1;
+}
+
+.moveUp {
+  transform: translate(-50%, -47%);
+}

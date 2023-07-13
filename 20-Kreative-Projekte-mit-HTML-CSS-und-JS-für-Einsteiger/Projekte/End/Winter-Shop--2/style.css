@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.person-img {
+  width: 500px;
+  height: 500px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+}
+
+.navigation div a {
+  transition: color 0.3s;
+  color: black;
+  text-decoration: none;
+}
+
+.navigation div a:hover {
+  color: #50a4d0;
+}
+
+.navigation div {
+  display: flex;
+  column-gap: 34px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #50a4d0;
+}
+
+.first-ctn {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 30px;
+}
+
+.second-ctn {
+  display: flex;
+  row-gap: 44px;
+  flex-direction: column;
+  width: 650px;
+}
+
+.second-ctn h1 {
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.second-ctn p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.second-ctn button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 0;
+  background-color: #50a4d0;
+  font-size: 20px;
+  color: #111;
+  border-radius: 8px;
+  width: 180px;
+  transition: background-color 0.3s;
+}
+
+.second-ctn button:hover {
+  background-color: #6aafd4;
+}
+
+.snow--1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+.snow--2 {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+
+.snow--3 {
+  position: absolute;
+  bottom: 20%;
+  left: 25%;
+}
+
+.snow--4 {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+.snow--5 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+
+.snow--6 {
+  position: absolute;
+  top: 15%;
+  right: 20%;
+}
+
+.snow--7 {
+  position: absolute;
+  bottom: 20%;
+  right: 40%;
+}

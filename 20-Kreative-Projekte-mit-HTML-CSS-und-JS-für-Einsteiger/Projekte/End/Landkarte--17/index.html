@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landkarten</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="blur-bg">
+        <img
+          src="loading-spinner.png"
+          alt="loading spinner"
+          class="loading-spinner"
+        />
+      </div>
+
+      <div class="country-flag"></div>
+      <ul>
+        <li>
+          <span>capital city</span>
+          <span class="capital-city">Berlin</span>
+        </li>
+
+        <li>
+          <span>language</span>
+          <span class="language">German</span>
+        </li>
+
+        <li>
+          <span>region</span>
+          <span class="region">Europa</span>
+        </li>
+
+        <li>
+          <span>start of week</span>
+          <span class="start-of-week">monday</span>
+        </li>
+
+        <li>
+          <span>subregion</span>
+          <span class="sub-region">Western Europe</span>
+        </li>
+
+        <li>
+          <span>population</span>
+          <span class="population">80000000 people</span>
+        </li>
+      </ul>
+    </div>
+
+    <input
+      type="text"
+      placeholder="Search your favourite country"
+      class="search"
+    />
+
+    <script src="script.js"></script>
+  </body>
+</html>

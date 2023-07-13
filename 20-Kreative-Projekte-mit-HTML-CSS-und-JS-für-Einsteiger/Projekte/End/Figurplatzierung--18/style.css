@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  cursor: grab;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.figures {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  display: flex;
+  column-gap: 24px;
+}
+
+.figure {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.figure:not(:first-child) {
+  width: 100px;
+  height: 100px;
+}
+
+.figure:hover {
+  transform: scale(1.1);
+}
+
+.x-y-pos {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  min-width: 150px;
+  height: 50px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 32px;
+  padding: 4px 12px;
+}
+
+span {
+  font-size: 24px;
+  color: white;
+}
+
+.newFigure {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

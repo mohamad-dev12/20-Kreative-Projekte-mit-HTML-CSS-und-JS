@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #07beb8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ctn {
+  background-color: #eee;
+  width: 1000px;
+  border-radius: 11px;
+  position: relative;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 24px 0 40px 24px;
+}
+
+.input-ctn {
+  display: flex;
+  column-gap: 80px;
+}
+
+.input-ctn div {
+  display: flex;
+  flex-direction: column;
+}
+
+.options-ctn {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 80px;
+  column-gap: 80px;
+}
+
+.options-ctn div {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  padding: 25px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  padding: 4px;
+  font-size: 16px;
+  padding-left: 8px;
+  width: 220px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  background-color: #07beb8;
+  cursor: pointer;
+  border: none;
+  width: 220px;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05) skewX(-20deg);
+}
+
+.summer-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-image: url(sommer-bild.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 11px 11px 0;
+}
